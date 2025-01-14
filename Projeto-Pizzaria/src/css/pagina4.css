@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+    background:rgb(22, 21, 21);
+    
+}
+::-webkit-scrollbar-thumb{
+    background-color: azure;
+    
+}
+.banner-principal{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    
+}
+
+.banner-principal img{
+    position: relative;
+    filter: brightness(30%);
+    height: 60vh;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    background-color: black;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 3vh;
+    height: auto;
+    align-items: baseline;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    
+      
+}
+.navegacao{
+    display: flex;
+    flex-direction: row;
+    gap: 8vh;
+    justify-content: space-between;
+    height: auto;
+    padding: 1vh;
+}
+.nav{
+    font-size: 25px;
+}
+.nav:hover{
+    border-bottom: solid 4px  #b22d30;
+}
+
+.logo{
+    color: white;
+    font-size: 50px;
+    height: auto;
+}
+span{
+    color:  #b22d30;
+}
+.navegacao{
+    color: white;
+}
+.txt-banner{
+   position: absolute;
+    color: white;
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 70vh;
+    padding: 2vh;
+    gap: 3vh;
+}
+.txt2-banner{
+    font-size: 70px;
+    
+  
+}
+.container1{
+    background-color: black;
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    align-items: center;
+    text-align: center;
+    height: auto;
+}
+.txt-container1{
+    padding: 2vh;
+}
+.txt1-container1{
+    font-size: 50px;
+    color: white;
+}
+.txt2-container1{
+    font-size: 35px;
+    color: white;
+}
+.Cadastro-container1{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 3vh;
+    margin-bottom: 5vh;
+    height: auto;
+}
+.Cadastro-container1 input{
+    width: 50vh;
+    height: auto;
+    padding: 2vh;
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    
+}
+.btn-container1 input{
+    width: 15vh;
+    height: auto;
+    text-align: center;
+    padding: 2vh;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: rgb(237, 161, 50);
+    border: none;
+}
+.btn-container1 input:Hover{
+    background-color:  #b22d30;
+    border: none;
+    scale: 1.06;
+}
+.container2{
+    padding-top: 5vh;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: rgb(22, 21, 21);
+}
+.txt-container2{
+    margin-bottom: 5vh;
+    padding: 2vh;
+    width: 30vh;
+    height: auto;
+}
+.txt1-container2{
+    color: #b22d30;
+    font-size: 30px;
+    height: auto;
+}
+.txt2-container2{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 2vh;
+}
+.container3{
+    padding-top: 1vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 1vh;
+    background-color:  #b22d30;
+    height: auto;
+}
+.redes-sociais{
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+    justify-content: center;
+}
+.rede{
+    margin-bottom: 5vh;
+    
+}
+.redes-sociais img{
+    width: 5vh;
+    height:5vh;
+}
+.txt-container3{
+    color: white;
+    font-size: 30px;
+    margin-top: 5vh;
+}
+footer{
+    text-align: center;
+    background-color: black;
+    padding: 3vh;
+    height: auto;
+}
+@media screen and (max-width:1150px){
+    header{
+        flex-direction: column;
+        gap: 1vh;
+        align-items: center;
+    }
+    .txt-banner{
+        width: 20vh;
+    }
+}
+@media screen and (max-width:900px){
+   .txt-container1{
+    width: 35vh;
+   }
+}
+@media screen and (max-width:750px){
+    .navegacao{
+        flex-direction: column;
+        gap: 1vh;
+    }
+    .Cadastro-container1{
+        width: 60vw;
+    }
+    .Cadastro-container1 input{
+        width: 55vw;
+    }
+    .txt2-banner{
+        margin-top: 10vh;
+    }
+ }
+ @media screen and (max-width:600px){
+    .txt2-banner{
+        font-size: 45px;
+    }
+    .txt-container1{
+        width: 25vh;
+    }
+    .txt1-container1{
+        font-size: 40px;
+    }
+    .txt2-container1{
+        font-size: 25px;
+    }
+    .Cadastro-container1 input{
+        width: 45vw;
+    }
+ }
+ @media screen and (max-width:450px){
+   .logo{
+    font-size: 35px;
+   }
+   .nav{
+    font-size: 20px;
+   }
+   .txt2-banner{
+    font-size: 35px;
+   }
+   .txt1-container1{
+    font-size: 30px;
+   }
+   .txt2-container1{
+    font-size: 20px;
+   }
+   .txt-container2{
+    width: 20vh;
+   }
+   .txt1-container2{
+    font-size: 25px;
+   }
+   .txt2-container2{
+    font-size: 20px;
+   }
+ }
+ @media screen and (max-width:330px){
+    .logo{
+        font-size: 25px;
+    }
+    .nav{
+        font-size: 15px;
+    }
+    .txt2-banner{
+        font-size: 25px;
+    }
+    .txt-banner{
+        width: 5vh;
+    }
+    .txt-container1{
+        width: 15vh;
+    }
+    .txt1-container1{
+        font-size: 25px;
+    }
+    .txt-container2{
+        width: 15vh;
+    }
+    .txt1-container2{
+        overflow: hidden;
+    }
+  }
+  @media screen and (max-width:230px){
+    .container1{
+        display: none;
+    }
+    .txt-container2{
+        width: 10vh;
+    }
+    
+    footer .logo{
+        display: none;
+    }
+  }
+  @media screen and (max-width:200px){
+    .logo{
+        display: none;
+    }
+  }
+  @media screen and (max-height:850px){
+    .txt-container1, .txt1-container1, .txt2-container1{
+        width: 50vh;
+    }
+    .Cadastro-container1, .Cadastro-container1 input{
+    width: 40vh;
+    }
+  }
+  @media screen and (max-height:570px){
+    .banner-principal img{
+        height: 80vh;
+    }
+    .txt2-banner{
+        margin-top: 25vh;
+    }
+    .txt-container1, .txt1-container1, .txt2-container1{
+        width: 50vh;
+    }
+    .Cadastro-container1, .Cadastro-container1 input{
+    width: 40vh;
+    }
+  }
+  @media screen and (max-height:390px){
+    .banner-principal img{
+        height: 110vh;
+    }
+    .txt2-banner{
+        margin-top: 45vh;
+    }
+  }
+  @media screen and (max-height:270px){
+    .txt2-banner{
+        display: none;
+    }
+  }
+  @media screen and (max-height:160px){
+    .navegacao{
+        display: none;
+    }
+  }
